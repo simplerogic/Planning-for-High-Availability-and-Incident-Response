@@ -2,7 +2,7 @@
 
 | Category     | SLI | SLO                                                                                                         |
 |--------------|-----|-------------------------------------------------------------------------------------------------------------|
-| Availability | 200 status codes or !5** status codes    | 99%                                                                                                         |
-| Latency      | round trip web request ms    | 90% of requests below 100ms                                                                                 |
-| Error Budget | failed requests / total requests    | Error budget is defined at 20%. This means that 20% of the requests can fail and still be within the budget |
-| Throughput   | total number of HTTP requests over   | 5 RPS indicates the application is functioning                                                              |
+| Availability | 200 status codes or !5** status codes.  This shows how available the app is by showing the successful codes vs unsuccessful codes.     | 99%                                                                                                         |
+| Latency      | round trip web request ms.  Latency metrics track how long it takes for a user to do something, whether thats loading a web page or making a database call. We want to make sure that the 90% percentile of round trip ms is less than 100ms     | 90% of requests below 100ms                                                                                 |
+| Error Budget | failed requests / total requests.  Error budget shows how many errors are allowed within a certain timeframe.    | Error budget is defined at 20%. This means that 20% of the requests can fail and still be within the budget |
+| Throughput   | total number of HTTP requests.  Tracks the amount of traffic going through the application.  Tracking this is helpful because it can indicate when its time to scale up or down.   | 5 RPS indicates the application is functioning                                                              |
